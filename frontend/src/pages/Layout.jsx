@@ -3,9 +3,9 @@ import AppSidebar from "../components/AppSidebar";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="bg-gray-200 flex flex-row">
       <AppSidebar />
-      {children}
+      <div className="p-4">{children}</div>
     </div>
   );
 };

@@ -4,15 +4,13 @@ import { Link } from "react-router-dom";
 
 const AppSidebar = () => {
   return (
-    <Sidebar>
+    <Sidebar className="h-screen">
       <Menu>
-        <MenuItem component={Link} to="/" icon={"🏠"}>
-          {" "}
-          Home{" "}
+        <MenuItem component={<Link to="/" />} icon={"🏠"}>
+          Home
         </MenuItem>
-        <MenuItem component={Link} to="/products" icon={"🛒"}>
-          {" "}
-          Products{" "}
+        <MenuItem component={<Link to="/products" />} icon={"🛒"}>
+          Products
         </MenuItem>
       </Menu>
     </Sidebar>
