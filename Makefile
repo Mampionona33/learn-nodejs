@@ -3,3 +3,6 @@ serve-backend:
 
 serve-frontend:
 	cd frontend && yarn && yarn start
+
+migrate-database:
+	cd backend && npx prisma migrate dev --name init
