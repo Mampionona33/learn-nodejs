@@ -15,8 +15,8 @@ model Product {
   description String
   name String
   price Int
-  photo String
-  quantity Int
+  photo String?
+  quantity Int?
   category String
   supplier String
 }
